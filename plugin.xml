@@ -35,6 +35,9 @@
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.VIBRATE"/>
         </config-file>
+	<js-module src="www/vibration.js" name="notification">
+            <merges target="navigator" />
+        </js-module>
     </platform>
 
     <!-- ios -->
